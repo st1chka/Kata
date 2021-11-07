@@ -17,7 +17,7 @@ public class Exception {
         System.out.println("throws Exception //т.к. результат римского вычесления не может быть < I");
         System.exit(0);
     }
-    public static void invalidOperator() {
+    public  void invalidOperator() {
         try {
             throw new java.lang.Exception("throws Exception //не корректный оператор");
         } catch (java.lang.Exception e) {
