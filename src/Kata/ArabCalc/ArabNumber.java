@@ -1,24 +1,27 @@
 package Kata.ArabCalc;
 
 
-import static Kata.ArabCalc.Check.Check.checkArab;
+import Kata.Exception.Exception;
+
 public class ArabNumber {
 
-    public void arabCalc(String a, String operator, String b) {
-        if (checkArab(a) && checkArab(b)) {
-            if (operator.equals("*")) {
-                System.out.println(Integer.parseInt(a) * Integer.parseInt(b));
-            }
-            if (operator.equals("/")) {
-                System.out.println(Integer.parseInt(a) / Integer.parseInt(b));
-            }
-            if (operator.equals("+")) {
-                System.out.println(Integer.parseInt(a) + Integer.parseInt(b));
-            }
-            if (operator.equals("-")) {
-                System.out.println(Integer.parseInt(a) - Integer.parseInt(b));
-            }
+    public int arabCalc(String a, String operator, String b) {
+
+        if (operator.equals("*")) {
+            System.out.println(Integer.parseInt(a) * Integer.parseInt(b));
         }
+        if (operator.equals("/")) {
+            System.out.println(Integer.parseInt(a) / Integer.parseInt(b));
+        }
+        if (operator.equals("+")) {
+            System.out.println(Integer.parseInt(a) + Integer.parseInt(b));
+        }
+        if (operator.equals("-")) {
+            System.out.println(Integer.parseInt(a) - Integer.parseInt(b));
+        }
+
+        System.exit(0);
+        return 0;
     }
 
 

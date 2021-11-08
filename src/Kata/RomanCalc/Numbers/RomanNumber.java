@@ -1,4 +1,4 @@
-package Kata.RomanCalc;
+package Kata.RomanCalc.Numbers;
 
 
 import java.util.HashMap;
